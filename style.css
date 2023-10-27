@@ -65,11 +65,12 @@
 @media only screen and (max-width: 600px) {
 
     #button:hover {
-        background-color: green;
+        /* background-color: green; */
     }
 
     .buttons:hover {
-        background-color: orangered;
-        transition: 0.2s all ease-in-out;
+        /* background-color: orangered; */
+        /* transition: 0.2s all ease-in-out; */
     }
+
 }
