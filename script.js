@@ -2,37 +2,6 @@ const buttons = document.querySelectorAll('.buttons');
 const input = document.querySelector('.field');
 let string = "0"
 input.value = string
-const screenWidth = window.screen.width;
-if (screenWidth < 600) {
-    buttons.forEach((ele) => {
-        ele.addEventListener('click', () => {
-            ele.style.backgroundColor = "rgb(255, 40, 0)";
-            ele.style.transition = "0.1s all ease-in-out";
-            setTimeout(() => {
-                ele.style.backgroundColor = "";
-                ele.style.transition = "";
-            }, 250)
-        })
-    })
-}
-else {
-    buttons.forEach((ele) => {
-        ele.addEventListener('click', () => {
-            setTimeout(() => {
-                ele.style.backgroundColor = "rgb(255, 40, 0)";
-                ele.style.transition = "0.1s all ease-in-out";
-            }, 200)
-        })
-        ele.addEventListener('mouseover', () => {
-            ele.style.backgroundColor = "orangered"
-        })
-        ele.addEventListener('mouseout', () => {
-            ele.style.backgroundColor = 'rgb(65, 65, 65)'
-        })
-
-    })
-}
-
 
 buttons.forEach((element) => {
     element.addEventListener('click', (() => {
